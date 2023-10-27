@@ -3,6 +3,7 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, PutCommand } from "@aws-sdk/lib-dynamodb";
 import Ajv from "ajv";
 import schema from "../shared/types.schema.json";
+import {Movie, MovieCast} from '../shared/types'
 
 const ajv = new Ajv();
 const isValidBodyParams = ajv.compile(schema.definitions["Movie"] || {});
@@ -76,3 +77,30 @@ function createDDbDocClient() {
   const translateConfig = { marshallOptions, unmarshallOptions };
   return DynamoDBDocumentClient.from(ddbClient, translateConfig);
 }
+
+export const movieCasts: MovieCast[] = [
+    {
+      movieId: 1234,
+      actorName: "Joe Bloggs",
+      roleName: "Male Character 1",
+      roleDescription: "description of character 1",
+    },
+    {
+      movieId: 1234,
+      actorName: "Alice Broggs",
+      roleName: "Female Character 1",
+      roleDescription: "description of character 2",
+    },
+    {
+      movieId: 1234,
+      actorName: "Joe Cloggs",
+      roleName: "Male Character 2",
+      roleDescription: "description of character 3",
+    },
+    {
+      movieId: 2345,
+      actorName: "Joe Bloggs",
+      roleName: "Male Character 1",
+      roleDescription: "description of character 3",
+    },
+  ];
