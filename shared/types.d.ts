@@ -1,3 +1,10 @@
+export type MovieReview = {
+  content: string;
+  reviewerName: string; 
+  rating: number;
+  reviewDate: string;
+  movieId: number;
+};
 
 export type Movie = {
     movieId: number;
@@ -11,12 +18,3 @@ export type Movie = {
     vote_average: number;
     vote_count: number
   }
-
-  export type MovieReview = {
-    movieId: number;
-    reviewerName: string; 
-    rating: number;
-    reviewDate: string;
-    content: string;
-  };
-  

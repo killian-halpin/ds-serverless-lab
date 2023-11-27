@@ -47,10 +47,10 @@ export const movies : Movie[] = [
     genre_ids: [28, 14, 32],
     original_language: 'en',
     overview:
-      "Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a vicious race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the planet and mankind hangs in the balance.",
+      "A famous American sniper struggles to fit in after returning home from a war thorn country and ultimately meets his doom trying to help other veterans.",
     popularity: 2633.943,
     release_date: "2020-11-21",
-    title: "Title 3456",
+    title: "American Sniper",
     video: false,
     vote_average: 5.9,
     vote_count: 111,

@@ -10,5 +10,14 @@ GET /movies/{movieId}/reviews - Get all the reviews for a movie with the specifi
 GET /movies/{movieId}/reviews?minRating=n - Get all the reviews for the movie with the specified ID with a rating greater than the minRating.
 
 
-There is also a reviewRating attribute to schema for use with minRating.
+Min rating not working.
+Get review by ID is also not working. 
+Post new review also not working code is there just don't know why it's not working. 
+
+API screenshots from AWS
+![Alt text](image.png)
+
+![Alt text](image-1.png)
+
+
 
