@@ -1,4 +1,4 @@
-import {Movie} from '../shared/types'
+import {Movie, MovieReview} from '../shared/types'
 
 export const movies : Movie[] = [
   {
@@ -14,6 +14,8 @@ export const movies : Movie[] = [
     vote_average: 5.9,
     vote_count: 111,
   },
+
+
   {
     movieId: 4567,
     genre_ids: [28, 14, 32],
@@ -54,3 +56,35 @@ export const movies : Movie[] = [
     vote_count: 111,
   },
 ];
+
+export const movieReviews: MovieReview[] = [
+  {
+    movieId: 1234,
+    reviewerName: "KillianHalpin",
+    rating: 5,
+    reviewDate: "2023-10-20",
+    content: "Brilliant movie!"
+  },
+  {
+    movieId: 4567,
+    reviewerName: "NathanBreen",
+    rating: 2,
+    reviewDate: "2021-12-15",
+    content: "Movie was only ok"
+  },
+  {
+    movieId: 2345,
+    reviewerName: "BenRoche",
+    rating: 4,
+    reviewDate: "2022-10-17",
+    content: "Loved it, great movie"
+  },
+  {
+    movieId: 3456,
+    reviewerName: "MartinHalpin",
+    rating: 1,
+    reviewDate: "2020-11-14",
+    content: "Absolutely Useless hated it"
+  }
+];
+
