@@ -22,10 +22,10 @@ export class RestAPIStack extends cdk.Stack {
       tableName: "Movies",
     });
 
-    const movieReviewTable = new dynamodb.Table(this, "MovieTeviewTable", {
+    const movieReviewTable = new dynamodb.Table(this, "MovieReviewTable", {
       billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
       partitionKey: { name: "movieId", type: dynamodb.AttributeType.NUMBER },
-      sortKey: { name: "reviewername", type: dynamodb.AttributeType.STRING },
+      sortKey: { name: "reviewerName", type: dynamodb.AttributeType.STRING },
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       tableName: "MovieReview",
     });
